@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Comparision");
+            //Console.WriteLine("Welcome to Line Comparision");
+            LineComparisions.Calculate_Length();
         }
     }
 }
