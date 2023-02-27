@@ -6,7 +6,8 @@
         {
             //Console.WriteLine("Welcome to Line Comparision");
             //LineComparisions.Calculate_Length();
-            LineComparisions.CheckEquality_LComparision();
+            // LineComparisions.CheckEquality_LComparision();
+            LineComparisions.CompareTwo_Lines();
         }
     }
 }

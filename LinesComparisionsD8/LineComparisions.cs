@@ -8,7 +8,7 @@ namespace LinesComparisionsD8
 {
     public class LineComparisions
     {
-        public static void CheckEquality_LComparision()
+        public static void CompareTwo_Lines()
         {
             Console.WriteLine("Enter the value for cooridinate x1");
             int x1 = Convert.ToInt32(Console.ReadLine());
@@ -27,19 +27,21 @@ namespace LinesComparisionsD8
             Console.WriteLine("Enter the value for cooridinate y4");
             int y4 = Convert.ToInt32(Console.ReadLine());
 
-            double LengthOfLine1 = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-            double LengthOfLine2 = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
+            double first = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            double second = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
             Console.WriteLine("Welcome to the Line Comparison Problems");
-            Console.WriteLine("Length of Line:" + LengthOfLine1);
-            Console.WriteLine("Length of Line:" + LengthOfLine2);
+            Console.WriteLine("Length of Line1:" + first);
+            Console.WriteLine("Length of Line2:" + second);
 
-            if (LengthOfLine1.Equals(LengthOfLine2) == true)
+            double compare = first.CompareTo(second);
+
+            if (compare >= 0)
             {
-                Console.WriteLine("Both the lines are equal");
+                Console.WriteLine("First line is greater than second line");
             }
             else
             {
-                Console.WriteLine("Both the lines are not equal");
+                Console.WriteLine("Second line is greater than first line");
             }
             Console.ReadLine();
         }
